@@ -1,0 +1,354 @@
+/* Start Global*/
+
+ * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-box-sizing: border-box;
+}
+
+body{
+	height: 1000px;
+	font-family: 'Dancing Script', cursive
+}
+
+.container {
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	z-index: 2;
+}
+
+/* End Global */
+
+/* Start navbar */
+.navbar{
+ font-size: 20px;
+ height: 0;
+ color: #fff;
+ position: relative;
+ z-index: 2;
+}
+
+.navbar .brand {
+	float: left;
+	width: 40%;
+}
+
+
+.navbar .links {
+	float: left;
+	width: 60%;
+	margin-top: 20px;
+}
+
+.navbar .links li {
+	display: inline-block;
+	padding: 10px 0;
+	margin: 10px 10px;
+	border-bottom: 2px solid transparent;
+	font-weight: bold;
+}
+.navbar .links li a {
+	color: #fff;
+	text-decoration: none;
+}
+.navbar .links .active a, 
+.navbar .links li a:hover {
+	color: #12c595;
+}
+
+.navbar .links .active, 
+.navbar .links li:hover {
+	border-bottom: 2px solid #12c595;
+}
+
+/* End navbar */
+
+/* Start Header */
+.header {
+	background: url('../Images/header.jbg.jpeg') no-repeat top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+    position: relative;
+	margin: 0 20px 0 
+}
+
+.header .overlay {
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	z-index: 1;
+}
+
+
+/* End Header */
+
+/* Start About */
+
+.info {
+	padding: 50px 0;
+}
+
+
+.info .h1 {
+	font-size: 30px;
+	font-family: 'Dancing Script', cursive
+	text-align: center;
+	margin: 0 0 20px;
+	color: #555;
+}
+
+.info .text {
+	background: #f7f1f1;
+	padding: 10px;
+	margin: 0 0 20px;
+	border: 1px solid #ddd;
+	border-radius: 30px;
+}
+.info .text .pic img {
+     width: 120px;
+}
+.info .text p {
+	margin: 10px;
+	line-height: 1.7;
+	width: calc(100% - 140px);
+	font-family: 'Dancing Script', cursive
+}
+
+/* End About */
+/* Start portfolio */
+.my-project {
+	padding: 40px 20px;
+	background-color: #f7f1f1;
+	border-radius: 20px;
+}
+.my-project .box{
+	float: left;
+	margin-right: 30px
+} 
+.my-project .box:first-child{
+	width: 35%;
+}
+.my-project .box p{
+	color: #888;
+	line-height: 1.4;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.my-project .box:not(:first-child){
+	width: 15.25%;
+	margin-left: 1%;
+	position: relative;
+	transition: all 1s ease-in-out;
+}
+.my-project .box:not(:first-child) .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	max-width: 100%;
+	height: 100%;
+	line-height: 183px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(94, 216, 115, 0.7);
+	display: none
+}
+.my-project .box a {
+    text-decoration: none;
+	color: #73492a;
+}
+
+.my-project .box a:hover {
+	color: #fff;
+}
+
+.my-project .box:not(:first-child):hover .overlay {
+	display: block;
+}
+.my-project .box:not(:first-child) img{
+	width: 100%;
+}
+.my-project h2{
+	padding: 0 0 15px;
+	font-family: 'Dancing Script', cursive
+}
+
+/* End portfolio */
+
+/* Start skills */
+.skills {
+    display: flex;
+	padding: 50px 0;
+}
+
+.skills .h2 {
+	padding: 0 0 15px;
+	margin-left: 55px;
+	margin-top: 10px;
+    font-family: 'Dancing Script', cursive
+}
+.skills .progress {
+	
+	padding: 20px 30px;
+	margin-top: 30px;
+	margin: auto;
+	width: 100%;
+}
+
+.skills .progress h3 {
+	color: #555;
+	font-family: 'Dancing Script', cursive
+}
+
+.skills .progress div {
+	background-color: #f2f2f2;
+	height: 25px;
+    width: 80%;
+	border-radius: 5px;
+}
+
+.skills .progress div span {
+	background-color: #b76565;
+	height: 25px;
+	display: block;
+	line-height: 25px;
+	text-align: right;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* End skills */
+
+/* start footer and contact */
+.footer {
+	background-color: #232323;
+	color: #6c6c6c;
+	padding: 50px 0;
+	margin-top: 40px;
+	border-radius: 10px;
+}
+
+.footer .contact {
+	color: #fff;
+	font-family: 'Dancing Script', cursive
+}
+.footer .social i {
+	display: inline-block;
+	color: #fff;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid #6c6c6c;
+	width: 40px;
+}
+
+.footer .copyright {
+	margin: -20px;
+	float: right;
+}
+/* End footer and contact */
+/* Start My Framework */
+
+.float-left {
+	float: left;
+}
+
+.special-heading {
+	position: relative;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.responsive-image {
+	width: 100%
+}
+
+.img-circle {
+	border-radius: 40px;
+}
+
+.img-thumbnail {
+	padding: 3px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+.separator {
+	border: 1px solid #f1efef;
+	display: block;
+}
+/* End My Framework */
+
+@media screen and (max-width: 500px) { /* small screen */
+	.header .overlay {
+		float: none;
+		font-size: 15px;
+	}
+	.header .overlay h2 {
+		width: 50%;
+		font-size: 1em;
+		float: none;
+		margin: auto;
+		text-align: center
+	}
+    .navbar .brand h2 {
+		font-size: 1em;
+	}
+	.navbar .brand h4 {
+		font-size: .7em
+	}
+	.info h2 {
+		font-size: 1.5em
+	}
+	
+	.info .text .pic {
+		float: none;
+		margin: auto;
+	}
+	
+	.info .text p {
+		float: none;
+		width: 100%
+	}tant
+	.my-project .box h2 {
+		font-size: 1.5em
+	}
+	.my-project .box p {
+		float: none;
+		width: 100%;
+		font-size: .9em
+	}	
+	.my-project .box:not(:first-child) .overlay {
+		 max-width: 100% !important;
+		 float: none !important
+	}
+	.my-project .box a {
+		font-size: .4em;
+	}
+	
+
+}
+
+
+
